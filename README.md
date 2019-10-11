@@ -1,24 +1,54 @@
 # iot-project-summary
 
-# Project summary
+# Project
+This is a general purpose IoT service with the aim to flexibly handle any Micro Controller Unit(MCU) that implements its
+MCU side API, agnostic to the language, hardware and even hardware modules of these Units. 
 
-# Server side API 
+It provides monitoring, control, automation and reporting services and exposes a REST/RPC API to the end consumers.
+A portal is also in the making to have a more convenient access to the services, but it's still in its early days.
 
-# MCU side API
+## History
+I early 2018 I have started my sabbatical leave with the aim to recharge and to steer my carreer towards software development.
+Fortunately these two have found parallel paths in more than one of my new hobbies, like indoor aeroponic gardening
+or micro controllers. Eventually culminating in this project that I've started to handle the controllers in my own garden 
+and still enjoy working on it, using it as a playground to learn new technologies.
+I also try to develop and document it in a way that it might be useful for others.
 
-reference implementation
+## Technologies
+Server side:
+- Java 11
+- Spring Boot 2.2.x
+- Docker 19.x with Docker Swarm
+- MongoDB 4.x
+- Gradle 5.6
+- Mosquitto MQTT broker 1.6
+- a ton of bash magic for the deployment :)
 
-# Deployment 
+MCU side:
+- MicroPython 1.11
+- ESP32 WROOM and WROVER micro controller modules
+- Various relay and sensor modules 
+
+## Server side API 
+Details of the server side API can be found at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway)
+
+## MCU side API
+Details of the MCU side API can be found at the [iot-unit-service](https://github.com/tlvlp/iot-unit-service) 
+
+Implementations used in my own gardens can be found at:
+- [BazsalikOn Soil](XXXXXXX)
+- [BazsalikOn Aero](XXXXXXX)
+
+## Deployment 
 Deployment details can be found at the project's [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) repository
 
-# Service details
+## Service details
 | Service | Details | |
 | :--- | :--- | :--- |
 | [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) | The main API for the project encapsulating the other services| Frontend |
-| [iot-portal](https://github.com/tlvlp/iot-portal) | A heavily experimental Vaadin based implementation of the API | Fontend | 
+| [iot-portal](https://github.com/tlvlp/iot-portal) | A heavily experimental Vaadin based implementation of the API | Frontend | 
 | [iot-mqtt-client](https://github.com/tlvlp/iot-mqtt-client) | The back-end services' link to the MQTT broker and the MCUs | Backend | 
 | [iot-unit-service](https://github.com/tlvlp/iot-unit-service) | Implements the MCU side of the API, handling all Units | Backend |
 | [iot-reporting-service](https://github.com/tlvlp/iot-reporting-service) | Stores input data and generates reports on demand | Backend |
 | [iot-scheduler-service](https://github.com/tlvlp/iot-scheduler-service) | Stores and executes scheduled tasks in the form of API calls | Backend |
 
-# 
