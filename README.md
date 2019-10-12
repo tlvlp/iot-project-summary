@@ -1,6 +1,6 @@
 # iot-project-summary
 
-# Project
+## Project
 This is a general purpose IoT service with the aim to flexibly handle any Micro Controller Unit(MCU) that implements its
 MCU side API, agnostic to the language, hardware and even hardware modules of these Units. 
 
@@ -30,14 +30,13 @@ MCU side:
 - Various relay and sensor modules 
 
 ## Server side API 
-Details of the server side API can be found at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway)
+Details of the server side API are detailed at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) service
 
 ## MCU side API
-Details of the MCU side API can be found at the [iot-unit-service](https://github.com/tlvlp/iot-unit-service) 
+Details of the MCU side API are detailed at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) template
 
 Implementations used in my own gardens can be found at:
-- [BazsalikOn Soil](XXXXXXX)
-- [BazsalikOn Aero](XXXXXXX)
+- [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil)
 
 ## Deployment 
 Deployment details can be found at the project's [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) repository
@@ -47,7 +46,7 @@ Deployment details can be found at the project's [iot-server-deployment](https:/
 | :--- | :--- | :--- |
 | [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) | The main API for the project encapsulating the other services| Frontend |
 | [iot-portal](https://github.com/tlvlp/iot-portal) | A heavily experimental Vaadin based implementation of the API | Frontend | 
-| [iot-mqtt-client](https://github.com/tlvlp/iot-mqtt-client) | The back-end services' link to the MQTT broker and the MCUs | Backend | 
+| [iot-mqtt-client](https://github.com/tlvlp/iot-mqtt-client) | The back-end services' link to the MQTT broker and the MCUs | Frontend | 
 | [iot-unit-service](https://github.com/tlvlp/iot-unit-service) | Implements the MCU side of the API, handling all Units | Backend |
 | [iot-reporting-service](https://github.com/tlvlp/iot-reporting-service) | Stores input data and generates reports on demand | Backend |
 | [iot-scheduler-service](https://github.com/tlvlp/iot-scheduler-service) | Stores and executes scheduled tasks in the form of API calls | Backend |
