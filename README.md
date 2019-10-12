@@ -8,7 +8,7 @@ It provides monitoring, control, automation and reporting services and exposes a
 A portal is also in the making to have a more convenient access to the services, but it's still in its early days.
 
 ## History
-I early 2018 I have started my sabbatical leave with the aim to recharge and to steer my carreer towards software development.
+In early 2018 I have started my sabbatical leave with the aim to recharge and to steer my carreer towards software development.
 Fortunately these two have found parallel paths in more than one of my new hobbies, like indoor aeroponic gardening
 or micro controllers. Eventually culminating in this project that I've started to handle the controllers in my own garden 
 and still enjoy working on it, using it as a playground to learn new technologies.
@@ -30,12 +30,12 @@ MCU side:
 - Various relay and sensor modules 
 
 ## Server side API 
-Details of the server side API are detailed at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) service
+The server side API is detailed at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) service
 
 ## MCU side API
-Details of the MCU side API are detailed at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) template
+The MCU side API is detailed at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) template
 
-Implementations used in my own gardens can be found at:
+Implementations used in my own indoor garden can be found at:
 - [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil)
 
 ## Deployment 
