@@ -37,6 +37,7 @@ The MCU side API is detailed at the [iot-mcu-modules](https://github.com/tlvlp/i
 
 Implementations used in my own indoor garden can be found at:
 - [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil)
+- [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero)
 
 ## Deployment 
 Deployment details can be found at the project's [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) repository
