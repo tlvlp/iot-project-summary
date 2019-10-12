@@ -42,14 +42,14 @@ The server side API is detailed at the [iot-api-gateway](https://github.com/tlvl
 ## MCU side API
 The MCU side API is detailed at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) template
 
-Implementations used in my own indoor garden can be found at:
+Units used in my own indoor garden can be found at:
 - [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil)
 - [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero)
 
 ## Deployment 
 Deployment details can be found at the project's [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) repository
 
-## Service details
+## Project Repositories
 | Service | Details | |
 | :--- | :--- | :--- |
 | [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) | The main API for the project encapsulating the other services| Frontend |
@@ -58,4 +58,8 @@ Deployment details can be found at the project's [iot-server-deployment](https:/
 | [iot-unit-service](https://github.com/tlvlp/iot-unit-service) | Implements the MCU side of the API, handling all Units | Backend |
 | [iot-reporting-service](https://github.com/tlvlp/iot-reporting-service) | Stores input data and generates reports on demand | Backend |
 | [iot-scheduler-service](https://github.com/tlvlp/iot-scheduler-service) | Stores and executes scheduled tasks in the form of API calls | Backend |
-
+| [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) | Complete deployment and related details | Backend |
+| [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) | The MCU side reference impl. / template | MCU |
+| [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil) | Custom microcontroller setup based on the mcu modules template | MCU |
+| [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero) | Custom microcontroller setup based on the mcu modules template | MCU |
+| [MicroPython upload](https://github.com/tlvlp/micropython-upload) | Upload scripts for the MicroPython firmware and MCUs | MCU |
