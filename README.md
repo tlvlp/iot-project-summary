@@ -29,6 +29,13 @@ MCU side:
 - ESP32 WROOM and WROVER micro controller modules
 - Various relay and sensor modules 
 
+## Security
+- The services use Docker Secrets to store sensitive data. These secrets are loaded by a custom parser before each service
+launches
+- No sensitive data is passed directly through environment variables (that would be readable in the service info)
+- All exposed endpoints are protected with TLS
+- All docker networks are encrypted (the services communicate in plain http)
+
 ## Server side API 
 The server side API is detailed at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) service
 
