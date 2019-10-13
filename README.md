@@ -21,6 +21,7 @@ Server side:
 - Docker 19.x with Docker Swarm
 - MongoDB 4.x
 - Gradle 5.6
+- JUnit 5
 - Mosquitto MQTT broker 1.6
 - a ton of bash magic for the deployment :)
 
@@ -53,7 +54,7 @@ Deployment details can be found at the project's [iot-server-deployment](https:/
 | Service | Details | |
 | :--- | :--- | :--- |
 | [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) | The main API for the project encapsulating the other services| Frontend |
-| [iot-portal](https://github.com/tlvlp/iot-portal) | A heavily experimental Vaadin based implementation of the API | Frontend | 
+| [iot-portal](https://github.com/tlvlp/iot-portal) | Unreleased - A heavily experimental Vaadin based implementation of the API | Frontend | 
 | [iot-mqtt-client](https://github.com/tlvlp/iot-mqtt-client) | The back-end services' link to the MQTT broker and the MCUs | Frontend | 
 | [iot-unit-service](https://github.com/tlvlp/iot-unit-service) | Implements the MCU side of the API, handling all Units | Backend |
 | [iot-reporting-service](https://github.com/tlvlp/iot-reporting-service) | Stores input data and generates reports on demand | Backend |
