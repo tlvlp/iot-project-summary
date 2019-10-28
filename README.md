@@ -64,3 +64,13 @@ Deployment details can be found at the project's [iot-server-deployment](https:/
 | [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil) | Custom microcontroller setup based on the mcu modules template | MCU |
 | [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero) | Custom microcontroller setup based on the mcu modules template | MCU |
 | [MicroPython upload](https://github.com/tlvlp/micropython-upload) | Upload scripts for the MicroPython firmware and MCUs | MCU |
+
+## Service calls overview
+
+This diagram shows an overview of the possible API calls between the services.
+All service except the MQTT broker uses the database so I have omitted the connections there for the sake of clarity.
+
+The API Gateway controls most of the processes, but the MQTT Client and the Scheduler can also call the gateway via a
+dedicated internal user account.
+
+![diagram](server_diagram.png)
