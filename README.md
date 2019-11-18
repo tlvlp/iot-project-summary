@@ -3,9 +3,10 @@
 ## Project
 This is a general purpose IoT service with the aim to flexibly handle any Micro Controller Unit(MCU) that implements its
 MCU side API, agnostic to the language, hardware and even hardware modules of these Units. 
-
 It provides monitoring, control, automation and reporting services and exposes a REST/RPC API to the end consumers.
-A portal is also in the making to have a more convenient access to the services, but it's still in its early days.
+
+The Hackster.io page where I've detailed the journey of creating this project has been selected to be featured on Hackster's front page:
+https://www.hackster.io/peter-veres/indoor-aeroponic-garden-automation-with-esp32-backend-138dde
 
 ## History
 In early 2018 I have started my sabbatical leave with the aim to recharge and to steer my carreer towards software development.
