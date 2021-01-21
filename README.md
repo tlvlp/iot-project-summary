@@ -1,7 +1,7 @@
 # iot-project-summary
 
 ## Current status:
-Since the project's start I have gathered some real life production experience and most of the legacy code in this project was not worth salvaging.
+> Since the project's start I have gathered some real life production experience and most of the legacy code in this project was not worth salvaging.
 The project is currently continued with a much more minimalistic, Quarkus-based single-service model. 
 A separate portal is also being developed, in a relaxed pace, whenever I have time to learn more Vue.js :)
 
