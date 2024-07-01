@@ -1,9 +1,7 @@
 # iot-project-summary
 
 ## Current status:
-> Since the project's start I have gathered some real life production experience and most of the legacy code in this project was not worth salvaging.
-The project is currently continued with a much more minimalistic, Quarkus-based single-service model. 
-A separate portal is also being developed, in a relaxed pace, whenever I have time to learn more Vue.js :)
+> This was an early learning project, that has long been abandoned, but I've decided to keep all the repos public as a reminder of how much fun it was working on them :)
 
 ## Project
 This is a general purpose IoT service with the aim to flexibly handle any Micro Controller Unit(MCU) that implements its
@@ -23,8 +21,6 @@ https://www.hackster.io/peter-veres/indoor-aeroponic-garden-automation-with-esp3
 | [MicroPython upload](https://github.com/tlvlp/micropython-upload) | Upload scripts for the MicroPython firmware and MCUs | MCU |
 
 
-# Here be Legacy Details and Repositories!
-
 ## History
 In early 2018 I have started my sabbatical leave with the aim to recharge and to steer my carreer towards software development.
 Fortunately these two have found parallel paths in more than one of my new hobbies, like indoor aeroponic gardening
@@ -32,7 +28,7 @@ or micro controllers. Eventually culminating in this project that I've started t
 and still enjoy working on it, using it as a playground to learn new technologies.
 I also try to develop and document it in a way that it might be useful for others.
 
-## Technologies (LEGACY!)
+## Technologies
 Server side:
 - Java 11
 - Spring Boot 2.2.x
@@ -49,27 +45,27 @@ MCU side:
 - ESP32 WROOM and WROVER micro controller modules
 - Various relay and sensor modules 
 
-## Security (LEGACY!)
+## Security
 - The services use Docker Secrets to store sensitive data. These secrets are loaded by a custom parser before each service
 launches
 - No sensitive data is passed directly through environment variables (that would be readable in the service info)
 - All exposed endpoints are protected with TLS
 - All docker networks are encrypted (the services communicate in plain http)
 
-## Server side API (LEGACY!)
+## Server side API
 The server side API is detailed at the [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) service
 
-## MCU side API (LEGACY!)
+## MCU side API
 The MCU side API is detailed at the [iot-mcu-modules](https://github.com/tlvlp/iot-mcu-modules) template
 
 Units used in my own indoor garden can be found at:
 - [BazsalikOn Soil](https://github.com/tlvlp/iot-mcu-bazsalikon-soil)
 - [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero)
 
-## Deployment (LEGACY!)
+## Deployment
 Deployment details can be found at the project's [iot-server-deployment](https://github.com/tlvlp/iot-server-deployment) repository
 
-## Project Repositories (LEGACY!)
+## Project Repositories
 | Service | Details | |
 | :--- | :--- | :--- |
 | [iot-api-gateway](https://github.com/tlvlp/iot-api-gateway) | The main API for the project encapsulating the other services| Frontend |
@@ -84,7 +80,7 @@ Deployment details can be found at the project's [iot-server-deployment](https:/
 | [BazsalikOn Aero](https://github.com/tlvlp/iot-mcu-bazsalikon-aero) | Custom microcontroller setup based on the mcu modules template | MCU |
 | [MicroPython upload](https://github.com/tlvlp/micropython-upload) | Upload scripts for the MicroPython firmware and MCUs | MCU |
 
-## Service calls overview (LEGACY!)
+## Service calls overview
 This diagram shows an overview of the possible API calls between the services.
 All service except the MQTT broker uses the database so I have omitted the connections there for the sake of clarity.
 
